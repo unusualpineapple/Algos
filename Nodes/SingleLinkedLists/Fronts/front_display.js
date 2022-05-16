@@ -75,3 +75,4 @@ sll.head = third_node
 sll.remove = another_node
 console.log(sll)
 console.log(another_node)
+console.log(listme)
