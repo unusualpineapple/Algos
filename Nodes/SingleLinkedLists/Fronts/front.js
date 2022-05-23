@@ -1,6 +1,6 @@
 // this is going to create a new node!!!
 
-class SLL {
+class Node {
     // constructor, other methods, removed for brevity
     constructor(data) {
         this.data=data;
@@ -26,13 +26,13 @@ class LinkedList {
 
     removeFront() {
     if (this.head == null) {
-        this.head = node.remove
+        // this.head = node.remove
         return this.head
     }
     var removedathang = this.head
     this.head = removedathang.next
     removedathang.next = null
-    return this.head
+    return removedathang
     } 
 
     valuehead() {
@@ -40,24 +40,28 @@ class LinkedList {
         return null
     }
     var headval = this.head
-    return headval.value
+    return headval.data
     }
 }
 
 
 
 let sll = new LinkedList()
-let new_node = new SLL(10)
-let another_node = new SLL(10)
-let third_node = new SLL(23234)
+// let new_node = new Node(10)
+// let another_node = new Node(25)
+// let third_node = new Node(23234)
 
-sll = new SLL()
+// sll = new Node()
 
-sll.head = new_node
-new_node.next = another_node
-sll.valuehead
+// sll.head = new_node
+// new_node.next = another_node
+// sll.valuehead
+// console.log(sll)
 
-sll.head = third_node
-sll.remove = another_node
+sll.addFront(14)
+sll.addFront(23234)
 console.log(sll)
-console.log(another_node)
+console.log(sll.removeFront())
+console.log(sll)
+console.log(sll.valuehead())
+// console.log(another_node)
